@@ -17,7 +17,8 @@
     //Add new object to array
     const addNewObjectToArray = (array,obj) => {
         const newArray = [...array];
-       return newArray.push(obj);
+        newArray.push(obj); 
+        return newArray;
     }
 
     // Filter object by key
