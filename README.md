@@ -596,3 +596,5 @@ Contributions are welcome! If you have additional utility functions to share or 
    - Your feedback is valuable! Share your thoughts on existing functions or suggest enhancements. Join discussions on open issues to contribute to the project's growth.
 
 By contributing to this project, you help create a resource that benefits the wider community. Thank you for being a part of this collaborative effort!
+
+**[⬆ back to top](#table-of-contents)**
