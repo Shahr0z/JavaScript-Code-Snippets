@@ -1,5 +1,6 @@
 # JavaScript Code Snippets / Utility Functions
 
+
 ## Introduction
 
 A collection of JavaScript utility functions for common tasks in development. These functions cover various aspects such as array manipulation, object operations, string formatting, and more. Each function is designed to be modular and reusable, providing convenience and efficiency in your code. Explore the wide range of functions to simplify your development process and enhance the functionality of your JavaScript projects.
