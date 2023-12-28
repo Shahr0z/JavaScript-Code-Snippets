@@ -39,6 +39,8 @@ A collection of JavaScript utility functions for common tasks in development. Th
   - [Convert Temperature between Celsius and Fahrenheit](#convert-temperature-between-celsius-and-fahrenheit)
   - [Deep Merge of Two Objects](#deep-merge-of-two-objects)
   - [Generate Random Password](#generate-random-password)
+  - [Convert truthy falsy to boolean](#convert-truthy-falsy-to-boolean)
+  - [Nested Destructuring](#nested-destructuring)
 
 ## Functions
 
@@ -575,6 +577,52 @@ const generateRandomPassword = (length = 8) => {
 }
 
 console.log(generateRandomPassword(6));
+```
+
+### Convert truthy falsy to boolean
+```javascript
+const convertToBoolean=(value)=> {
+  return Boolean(value);
+}
+
+console.log(convertToBoolean(0));           // false
+console.log(convertToBoolean(1));           // true
+console.log(convertToBoolean(''));          // false
+console.log(convertToBoolean('hello'));     // true
+console.log(convertToBoolean(null));        // false
+console.log(convertToBoolean(undefined));   // false
+console.log(convertToBoolean(NaN));         // false
+console.log(convertToBoolean([]));          // true
+console.log(convertToBoolean({}));          // true
+console.log(convertToBoolean(false));       // false
+console.log(convertToBoolean(true));        // true
+```
+
+### Nested Destructuring
+```javascript
+const user = {
+  id: 1,
+  name: 'John',
+  address: {
+    street: '123 Main St',
+    city: 'New York',
+    country: 'USA'
+  }
+};
+
+// Example:1
+const {address:{city}}=user
+console.log(city);
+
+// Example:2
+const nestedDestructuring=(obj, path, variableName) =>{
+  const { [path]: nestedValue } = obj;
+  const extractedValue = nestedValue[variableName];
+  return extractedValue;
+}
+
+const cityName = nestedDestructuring(user, 'address', 'city');
+console.log(cityName);
 ```
 
 ## Usage
